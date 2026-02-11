@@ -1,0 +1,1 @@
+doing questions of function in cpp

@@ -1,33 +1,34 @@
 #include <iostream>
+using namespace std;
 int main()
 {
     int a = 8;
 
     for (int i = 0; i <= a; i++)
     {
-        std::cout << "*";
+        cout << "*";
 
     }
-    std::cout<<'\n';
-    for (int j = 0; j <= a; j++)
+     cout<<'\n';  
+       for (int j = 0; j <= a; j++)
     {
         for (int i = 0; i <= a; i++)
         {
             if (i == 0 || i == a)
             {
-                std::cout << "*";
+                cout << "*";
             }
             else
             {
-                std::cout << " ";
+            cout << " ";
             }
         }
-        std::cout<<'\n';
+        cout<<'\n';
     }
     
     for (int i = 0; i <= a; i++)
     {
-        std::cout << "*";
+        cout << "*";
     }
     return 0;
 }
