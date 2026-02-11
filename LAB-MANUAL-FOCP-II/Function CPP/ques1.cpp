@@ -17,7 +17,7 @@ bool isprime(int n)
 int main()
 {
     int n;
-    cout<<n;
+    cout<<"enter a number";
     cin>>n;
     
     if (isprime(n))
