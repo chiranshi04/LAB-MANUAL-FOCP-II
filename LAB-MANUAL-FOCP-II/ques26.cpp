@@ -14,7 +14,7 @@ int main()
 
     for(int i=0; i < paswd.length(); i++)
     {
-        ch = paswd[i];
+        ch = paswd[i]; // checking every single individual character of the password
 
         if(ch >= 'A' && ch <= 'Z')
         {
