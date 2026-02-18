@@ -1,9 +1,11 @@
+ // C++the concept of call by value and call by reference
+
 #include<iostream>
 using namespace std;
 
 void swapbyvalue(int a,int b)
 {
-cout<<"a and n before swap= "<<a<<b<<endl;
+cout<<"a and b before swap= "<<a<<b<<endl;
  int temp=a;
   a=b;
  b=temp;
@@ -12,8 +14,8 @@ cout<<"a and b after swap"<<a<<b<<endl;
 
 void swapbyrefernce(int &a,int &b)
 {
-    cout<<"a and n before swap = "<<a<<b<<endl;
-    int temp =a;;
+    cout<<"a and b before swap = "<<a<<b<<endl;
+    int temp =a;
     a=b;
     b=temp;
     cout<<"a and b after swap"<<a<<b<<endl;
