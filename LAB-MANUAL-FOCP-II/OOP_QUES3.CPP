@@ -25,14 +25,40 @@ class bankaccount
        cout<<"number is "<<accountnumber<<endl;
        cout<< "balance is ="<<balance<<endl;
     }
+    void deposit()
+    {
+    double amount;
+    cout << "Enter amount to deposit: ";
+    cin >> amount;
 
-};
+    balance = balance + amount;
+    cout << "Deposit successful!" << endl;
+    }
+    void withdraw()
+    {
+        double amount;
+        cout << "Enter amount to withdraw: ";
+        cin >> amount;
+
+        if (amount > balance) {
+            cout << "Insufficient balance!" << endl;
+        } 
+        else 
+        {
+            balance = balance - amount;
+            cout << "Withdrawal successful!" << endl;
+        }
+
+}};
 int main()
 {
   bankaccount s1;
   s1.input_details();
   s1.display_details();
-  
+    s1.deposit();
+  s1.display_details();
+    s1.withdraw();
+    s1.display_details();
  return 0;
 
 }

@@ -9,6 +9,9 @@
 
     for(int i=0;i<5;i++)
     cin>>arr[i];
+    
+    for(int i=0;i<5;i++)
+    cout<<arr[i];
 
     int largest= arr[0];
     int second_largest= arr[0];
@@ -18,12 +21,12 @@
       
         if(arr[i]>largest)
     {    
-        second_largest=largest;
-     largest= arr[i];
+      second_largest=largest;
+       largest= arr[i];
     } 
      else if(arr[i]>second_largest)
      {
-        arr[i]=second_largest;
+        second_largest=arr[i];
      }
 
     }

@@ -29,7 +29,7 @@ using namespace std;
             total=marks1+marks2+marks3;
             cout<<"the total marks of student="<<total;
         }
-        void display_detail()
+        void display_detail() // getter function
         {
             cout<<"\nname of student="<<name;
             cout<<"\nroll number of student="<<rollno;
@@ -41,7 +41,7 @@ using namespace std;
     };
     int main()
     {
-        student s1;
+        student s1;  //s1 is an object of class student
         s1.input_detail();
         s1.calculate_total();
         s1.display_detail();
