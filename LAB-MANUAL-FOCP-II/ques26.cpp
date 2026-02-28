@@ -28,7 +28,7 @@ int main()
         {
             digit = 1;
         }
-        else
+        else 
         {
             special_char = 1;
         }
